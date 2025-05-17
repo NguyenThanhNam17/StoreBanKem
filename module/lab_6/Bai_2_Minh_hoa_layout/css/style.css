@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  body {
+	font-family: Arial, sans-serif;
+  }
+  
+  .wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+  }
+  
+  /* Header và Footer chiếm toàn bộ chiều ngang */
+  .header, .footer {
+	flex: 1 100%;
+	padding: 10px;
+	font-weight: bold;
+  }
+  
+  .header {
+	background-color: skyblue;
+  }
+  
+  .footer {
+	background-color: lightgreen;
+  }
+  
+  /* Aside trái và phải */
+  .aside-1 {
+	background-color: gold;
+	width: 20%;
+	height: 400px;
+	padding: 10px;
+	font-weight: bold;
+  }
+  
+  .aside-2 {
+	background-color: hotpink;
+	width: 20%;
+	height: 400px;
+	padding: 10px;
+	font-weight: bold;
+  }
+  
+  /* Nội dung chính ở giữa */
+  .main {
+	background-color: deepskyblue;
+	width: 60%;
+	padding: 10px;
+	text-align: left;
+  }
+  
+  .main p {
+	margin-bottom: 10px;
+  }
+  
+  .main img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+  }
+  
+
+  @media only screen and (max-width:760px){
+	.wrapper{
+		flex-direction: column;
+	}
+	.aside-1{
+		width: 100%;
+		height: auto;
+	}
+
+	.aside-2{
+		height: auto;
+		width: 100%;
+	}
+
+	.main{
+		height: auto;
+		width: 100%;
+	}
+}

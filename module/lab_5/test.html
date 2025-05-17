@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách các bài tập có trong lab-5</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f4f8;
+        margin: 0;
+        padding: 2rem;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .card {
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        padding: 1.5rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      }
+
+      .card h3 {
+        margin: 0 0 1rem;
+        font-size: 1.2rem;
+        color: #333;
+      }
+
+      .card a {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        transition: background-color 0.2s ease;
+      }
+
+      .card a:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Danh sách các mục</h1>
+    <div class="container">
+      <div class="card">
+        <h3>Bài 1</h3>
+        <a href="./bai1/index.html">Xem chi tiết</a>
+      </div>
+      <div class="card">
+        <h3>Bài 2</h3>
+        <a href="./bai2/index.html">Xem chi tiết</a>
+      </div>
+      <div class="card">
+        <h3>Bài 3</h3>
+       <a href="./bai1/index.html">Xem chi tiết</a>
+      </div>
+      <div class="card">
+        <h3>Bài 4</h3>
+         <a href="./bai2/index.html">Xem chi tiết</a>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
